@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vacation Rental Form</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet" type="text/css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlQAupDgK_CseNr8ZCjoqPixKzfNSPz4k&callback=initMap" async defer></script>
+<script src="./js/main.js" async defer></script>
+</head>
+
+<body>
+	<header>
+		<h1>North Canada Cottage Rentals</h1>
+	</header>
+ 	<main>
+		<form name="rental-form" method="post">
+        <input type="hidden" name="price" />
+        <label><b>Price</b></label>
+        <select onchange="calculateAmount(this.value)" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="500">$500 - 20% OFF INCLUDED!</option>
+		</select>
+        <label><b>Total Cost</b></label>
+        <input name="tot_cost" id="tot_cost" type="text" readonly>
+		<section>
+			<img id="firstCottage" src="./img/first-cottage.jpg" alt="First Cottage">
+			<p id="desc" onclick="propertyDesc()">Description (CLICK ME)</p>
+		</section>
+		<aside>
+		<form id="priceTwo" name="rental-form" method="post">
+        <input type="hidden" name="price" />
+        <label><b>Price</b></label>
+        <select onchange="calculateAmt(this.value)" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="300">$300 - 20% OFF INCLUDED!</option>
+		</select>
+        <label><b>Total Cost</b></label>
+        <input name="tot_amt" id="tot_amt" type="text" readonly>
+			<img id="secondCottage" src="./img/second-cottage.jpg" alt="Second Cottage">
+			<p id="desc2" onclick="propertyDesc2()">Description (CLICK ME)</p>
+		</aside>
+		</section>
+			<br>
+             <!-- Button to advise user of their coordinates and map to display location of the cottage -->
+			<button>Where am I?</button>
+			<p id= 'p1'></p>
+			<br>
+		  <article class="container">
+    		<h2>Map/Location</h2>
+			 <div id="map"></div>
+   		  </article>
+	</main>
+	<footer>
+		  <p>&copy; 2020 COMP1073 - Jasmine Nguyen</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Photo Gallery */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+}
+
+img {
+	width: 25%;
+	vertical-align: middle;
+}
+
+[onClick] {
+	cursor: pointer;
+}
+
+#desc {
+	width: 25%;
+	line-height: 1rem;
+}
+
+#desc2 {
+	width: 25%;
+	line-height: 1rem;
+}
+
+#p1 {
+    font-family: 'Raleway', sans-serif;
+	color: #C70C10;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+button {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    padding: 1.25rem 2rem;
+	margin-top: 5rem;
+    font-size: 1rem;
+    border-radius: 3.5rem;
+    position: relative;
+    min-width: 15rem;
+    max-width: 90rem;
+    overflow: hidden;
+    border: 0;
+	background-color: #DB3760;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+article {
+  height: 500px;
+}
+
+#map {
+  width: 100%;
+  height: 100%; 
+  background-color: grey;
+}
+
+footer > p {
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+}
